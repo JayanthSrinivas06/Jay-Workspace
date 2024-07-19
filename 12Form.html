@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body>
+    <form action="12Form.php" method="POST" encrypte="multipart/form-data"> <!--action term is used to send form to the given named file and method is used to specify two types,POST(used when confidentional info) and GET(used for sensitive data)-->
+        <label for="username">User Name:</label>
+        <input type="text" id="username" placeholder="Name" minlength="6" max length="15" required>
+        <input type="reset"><br>
+<br>
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <input type="reset"><br>
+<br>
+        <label for="emali">E-mail:</label>
+        <input type="email" id="email" placeholder="Someone@mail.com">
+        <input type="reset"><br>
+<br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <input type="reset"><br>
+<br>
+        <label for="bday">Birthdate:</label>
+        <input type="date" id="bday"><br>
+<br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1"><br>
+<br>
+        <label for="title">Title:</label>
+
+
+        <input type="radio" id="Mr" value="Mr. " name="Title">
+        <label for="Mr">Mr.</label>
+        <input type="radio" id="Ms" value="Ms. " name="Title">
+        <label for="Ms">Ms.</label>
+        <input type="radio" id="phD" value="phD. " name="Title">
+        <label for="phD.">phD.</label><br>
+        <br>
+        <label for="payments">Payment</label>
+        <select>
+            <option value="visa">VISA</option>
+            <option value="mastercard">Master card</option>
+            <option value="giftcoupon">Gift coupon</option>
+        </select><br>
+<br>
+
+        <input type="checkbox" id="subscribe">
+        <label for="subscribe">Tick if everything's right</label><br>
+<br>
+        <label for="comment">Any comments:</label>
+        <textarea id="comment" rows="3" cols="25"></textarea><br>
+<br>
+        <label for="file">File:</label>
+        <input type="file" id="file"><br>
+        <br>
+        <label for="file">Only images:</label>
+        <input type="file" id="file" accept="image/png, image/jpeg"><br>
+<br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>

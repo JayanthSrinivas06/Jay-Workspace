@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio in HTML</title>
+</head>
+<body>
+    <p>No Indication</p>
+    <audio controls autoplay muted loop><!--'controls' for displaying music buttons and 'loop' for loopinf song again when completed and 'autoplay' for autoplaying when opened and 'muted' for keeping muted-->
+        <source src="audios/No Indication - TrackTribe.mp3" type="audio/mpeg">
+        <source src="audios/No Indication - TrackTribe.wav" type="audio/wav"><!--wave or wav used for preventing errors as some websites may not supports mp3-->
+    </audio>
+    <br>
+    <p>Tow Hearts</p>
+    <audio controls loop><!--'controls' for displaying music buttons and 'loop' for loopinf song again when completed and 'autoplay' for autoplaying when opened and 'muted' for keeping muted-->
+        <source src="audios/Two Hearts - TrackTribe.mp3" type="audio/mpeg">
+        <source src="audios/Two Hearts - TrackTribe.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
